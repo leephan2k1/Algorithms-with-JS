@@ -26,7 +26,7 @@ function createCalendar(elem, year, month) {
     }
     elem.innerHTML = table;
 }
-//Custom lại hàm getDay cho đúng logic t2 -> cn = 1->7
+//Custom lại hàm getDay t2 -> cn <=> 0->6
 function getDay(date) { // get day number from 0 (monday) to 6 (sunday)
     let day = date.getDay();
     if (day == 0) day = 7; // make Sunday (0) the last day
